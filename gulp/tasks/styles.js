@@ -10,9 +10,12 @@ const sass = gulpSass(dartSass);
 
 export const styles = async () => {
 	const gcmq = (await import("gulp-group-css-media-queries")).default;
+	const plumber = (await import("gulp-plumber")).default;
 
 	return (
 		src(paths.styles)
+			.pipe(plumber())
+			//
 			.pipe(sass().on("error", sass.logError))
 			//
 			.pipe(autoprefixer({ cascade: false }))

@@ -4,7 +4,7 @@ import { distPath, paths } from "../config/paths.js";
 
 export const images = () => {
 	return (
-		src(paths.images)
+		src(paths.images, { encoding: false })
 			//
 			.pipe(dest(`${distPath}/images/`))
 	);
