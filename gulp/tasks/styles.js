@@ -7,10 +7,13 @@ import { distPath, paths } from "../config/paths.js";
 import browserSync from "browser-sync";
 
 const sass = gulpSass(dartSass);
+const isBuild = process.env.NODE_ENV?.replace(" ", "") === "build";
 
 export const styles = async () => {
-	const gcmq = (await import("gulp-group-css-media-queries")).default;
 	const plumber = (await import("gulp-plumber")).default;
+	const gcmq = (await import("gulp-group-css-media-queries")).default;
+	const cleanCss = (await import("gulp-clean-css")).default;
+	const gulpIf = (await import("gulp-if")).default;
 
 	return (
 		src(paths.styles)
@@ -21,6 +24,8 @@ export const styles = async () => {
 			.pipe(autoprefixer({ cascade: false }))
 			//
 			.pipe(gcmq())
+			//
+			.pipe(gulpIf(isBuild, cleanCss()))
 			//
 			.pipe(dest(`${distPath}/css/`))
 			//

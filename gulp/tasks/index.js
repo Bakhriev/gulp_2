@@ -10,6 +10,7 @@ import { icons } from "./icons.js";
 import { sprite } from "./sprite.js";
 import { vendors } from "./vendors.js";
 import { fonts } from "./fonts.js";
+import { zipProject } from "./zip.js";
 
 export {
 	html,
@@ -24,4 +25,5 @@ export {
 	sprite,
 	vendors,
 	fonts,
+	zipProject,
 };
