@@ -6,27 +6,39 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-		<!-- <link
+		<link
 			rel="preload"
 			href="./assets/fonts/FontName.woff2"
 			as="font"
 			type="font/woff2"
-			crossorigin /> -->
+			crossorigin />
 
 		<link rel="stylesheet" href="./css/main.css" />
 	</head>
 	<body>
 		<div class="app">
-			<header class="header"></header>
+			<header class="header">
+				<div class="header__container container">
+					<!--  -->
+					<button class="burger">
+						<span class="burger__stick"></span>
+						<span class="burger__stick"></span>
+						<span class="burger__stick"></span>
+					</button>
+				</div>
+			</header>
+			<!--  -->
 			<main class="main">
-				<!-- Svg Sprite Example -->
-				<svg width="40" height="40" style="color: red">
-					<use href="./images/sprite/sprite.svg#home"></use>
-				</svg>
+				<section class="hero">
+					<div class="hero__container container"></div>
+				</section>
 			</main>
-			<footer class="footer"></footer>
+			<!--  -->
+			<footer class="footer">
+				<div class="footer__container container"></div>
+			</footer>
 		</div>
 
-		<script src="./js/main.js"></script>
+		<script type="module" src="./js/main.js"></script>
 	</body>
 </html>
