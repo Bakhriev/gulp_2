@@ -4,7 +4,7 @@ import { distPath, paths } from "../config/paths.js";
 
 export const media = () => {
 	return (
-		src(paths.media)
+		src(paths.media, { encoding: false })
 			//
 			.pipe(dest(`${distPath}/media/`))
 	);
