@@ -1,79 +1,79 @@
 @mixin hover {
-  @media (any-hover: hover) and (pointer: fine) {
-    &:hover {
-      @content;
-    }
-  }
+	@media (any-hover: hover) and (pointer: fine) {
+		&:hover {
+			@content;
+		}
+	}
 }
 
 @mixin center {
-  top: 50%;
-  left: 50%;
-  translate: -50% -50%;
+	top: 50%;
+	left: 50%;
+	translate: -50% -50%;
 }
 
 @mixin center-y {
-  top: 50%;
-  translate: 0 -50%;
+	top: 50%;
+	translate: 0 -50%;
 }
 
 @mixin text-shorten($numLines: 1) {
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
 
-  @supports (-webkit-line-clamp: $numLines) {
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: initial;
-    display: -webkit-box;
-    -webkit-line-clamp: $numLines;
-    -webkit-box-orient: vertical;
-  }
+	@supports (-webkit-line-clamp: $numLines) {
+		overflow: hidden;
+		text-overflow: ellipsis;
+		white-space: initial;
+		display: -webkit-box;
+		-webkit-line-clamp: $numLines;
+		-webkit-box-orient: vertical;
+	}
 }
 
 @mixin btn-reset {
-  // For <a></a>
-  display: inline-block;
-  text-decoration: none;
+	// For <a></a>
+	display: inline-block;
+	text-decoration: none;
 
-  padding: 0;
+	padding: 0;
 
-  cursor: pointer;
-  user-select: none;
+	cursor: pointer;
+	user-select: none;
 
-  font: inherit;
-  color: inherit;
+	font: inherit;
+	color: inherit;
 
-  background-color: transparent;
-  border: none;
+	background-color: transparent;
+	border: none;
 }
 
 @mixin list-reset {
-  list-style: none;
-  margin: 0;
-  padding: 0;
+	list-style: none;
+	margin: 0;
+	padding: 0;
 }
 
 @mixin input-reset {
-  width: 100%;
-  padding: 0;
-  border: none;
-  outline: none;
-  border-radius: 0;
-  background-color: transparent;
-  font: inherit;
-  color: inherit;
+	width: 100%;
+	padding: 0;
+	border: none;
+	outline: none;
+	border-radius: 0;
+	background-color: transparent;
+	font: inherit;
+	color: inherit;
 }
 
 @mixin sr-only {
-  position: absolute !important;
-  overflow: hidden !important;
-  width: 1px !important;
-  height: 1px !important;
-  padding: 0 !important;
-  margin: -1px !important;
-  border: 0 !important;
-  white-space: nowrap !important;
-  clip-path: inset(50%) !important;
+	position: absolute !important;
+	overflow: hidden !important;
+	width: 1px !important;
+	height: 1px !important;
+	padding: 0 !important;
+	margin: -1px !important;
+	border: 0 !important;
+	white-space: nowrap !important;
+	clip-path: inset(50%) !important;
 }

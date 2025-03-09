@@ -1,1 +1,1 @@
-import "./modal.js";
+import { initModal } from "./modal.js";

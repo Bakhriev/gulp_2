@@ -21,8 +21,8 @@ import {
 const dev = series(
 	del,
 	html,
+	styles,
 	parallel(
-		styles,
 		scripts,
 		media,
 		images,
