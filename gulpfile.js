@@ -19,8 +19,8 @@ import {
 
 const dev = series(
 	del,
+	html,
 	parallel(
-		html,
 		styles,
 		scripts,
 		media,

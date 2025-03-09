@@ -2,7 +2,7 @@ export const srcPath = "./src";
 export const distPath = "./dist";
 
 export const paths = {
-	html: `${srcPath}/**/*.html`,
+	html: `${srcPath}/*.html`,
 	styles: `${srcPath}/scss/**/*.{scss,sass}`,
 	scripts: `${srcPath}/js/**/*.js`,
 	images: `${srcPath}/images/**/*.{png,jpg,jpeg,webp,avif}`,

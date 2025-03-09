@@ -15,6 +15,7 @@ import {
 
 export const watcher = () => {
 	watch(paths.html, html);
+	watch("./src/html/**/*.html", html);
 	watch(paths.styles, styles);
 	watch(paths.scripts, scripts);
 	watch(paths.media, media);

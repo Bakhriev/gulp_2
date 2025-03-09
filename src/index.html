@@ -17,26 +17,13 @@
 	</head>
 	<body>
 		<div class="app">
-			<header class="header">
-				<div class="header__container container">
-					<!--  -->
-					<button class="burger">
-						<span class="burger__stick"></span>
-						<span class="burger__stick"></span>
-						<span class="burger__stick"></span>
-					</button>
-				</div>
-			</header>
-			<!--  -->
+			@include('./html/header.html')
 			<main class="main">
-				<section class="hero">
-					<div class="hero__container container"></div>
-				</section>
+				<!--  -->
+				@include('./html/hero.html')
+				<!--  -->
 			</main>
-			<!--  -->
-			<footer class="footer">
-				<div class="footer__container container"></div>
-			</footer>
+			@include('./html/footer.html')
 		</div>
 
 		<script type="module" src="./js/main.js"></script>
