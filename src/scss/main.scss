@@ -5,6 +5,7 @@
 
 // utils
 @use "./utils/mixins";
+@use "./utils/utils";
 
 // config
 @use "./config/vars";
@@ -13,6 +14,8 @@
 
 // components
 @use "./components/burger";
+@use "./components/custom-radio";
+@use "./components/custom-checkbox";
 @use "./components/modal";
 
 // pages
