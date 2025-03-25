@@ -3,8 +3,8 @@ import { distPath, paths } from "../config/paths.js";
 
 export const icons = async () => {
 	return (
-		src(paths.icons)
+		src(paths.icons, { encoding: false })
 			//
-			.pipe(dest(`${distPath}/images/icons/`))
+			.pipe(dest(`${distPath}/icons/`))
 	);
 };

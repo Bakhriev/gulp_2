@@ -17,5 +17,11 @@
 @use "./components/custom-radio";
 @use "./components/custom-checkbox";
 @use "./components/modal";
+@use "./components/header";
+@use "./components/footer";
+
+// Sections
+@use "./sections/hero";
 
 // pages
+@use "./pages/home";

@@ -1,5 +1,12 @@
 // <input id="" type="radio" class="custom-radio" />
 
+.custom-radio-wrapper {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	user-select: none;
+}
+
 .custom-radio {
 	appearance: none;
 	margin: 0;
@@ -22,7 +29,9 @@
 		left: 50%;
 		translate: -50% -50%;
 
-		border: 8px solid #222;
+		width: 16px;
+		height: 16px;
+		background-color: #222;
 		border-radius: 50%;
 
 		transition: opacity 150ms ease-in-out;

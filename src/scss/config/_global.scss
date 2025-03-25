@@ -15,11 +15,12 @@
 	--max-width: 1400px;
 
 	margin-inline: auto;
+
 	padding-inline: var(--padding);
 	max-width: calc(var(--max-width) + var(--padding) * 2);
 	width: 100%;
 }
 
 body {
-	background-color: #222;
+	background-color: #666;
 }
