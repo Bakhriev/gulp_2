@@ -1,4 +1,4 @@
-@use "../utils/mixins";
+@use "../utils/mixins" as *;
 
 .burger {
 	--burger-width: 30px;
@@ -8,7 +8,7 @@
 	--burger-color: #0bc4c4;
 	--burger-active-color: #0bc4c4;
 
-	@include mixins.btn-reset;
+	@include btn-reset;
 
 	display: flex;
 	flex-direction: column;
